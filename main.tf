@@ -61,7 +61,7 @@ data "vsphere_ovf_vm_template" "ovfLocal" {
 }
 
 #####
-# Wait a few seconds
+# Create ADC VM
 #####
 resource "vsphere_virtual_machine" "build_citrix-adc" {
   name                 = var.vm.name
