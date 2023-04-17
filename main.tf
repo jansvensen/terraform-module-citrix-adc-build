@@ -92,9 +92,9 @@ resource "vsphere_virtual_machine" "build_citrix-adc" {
     ovf_network_map           = data.vsphere_ovf_vm_template.ovfLocal.ovf_network_map
   }
 
-  extra_config = {
-    "machine.id" = local.networkstring
-  }
+#  extra_config = {
+#    "machine.id" = local.networkstring
+#  }
 }
 
 #####
